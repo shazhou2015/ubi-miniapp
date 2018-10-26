@@ -5,7 +5,8 @@
   </view>
   
   <view class="btn-area">
-    <button type="primary" bindtap='onCreateButtonClicked'>安排！</button>
+    <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onCreateWithUserInfo">安排！</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onJoinWithUserInfo">安排(JOIN)！</button>
   </view>
 
 </view>

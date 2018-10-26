@@ -1,1 +1,1 @@
-/* modules/party-gift-randomizer/pages/participants/participants.wxss */
+@import "/base/index.wxss";

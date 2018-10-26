@@ -62,5 +62,18 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  onBuyButtonClicked: function () {
+    wx.showModal({
+      content: 'are you sure?',
+      confirmText: '确定',
+      cancelText: '取消',
+      success: function() {
+        wx.redirectTo({
+          url: '../getGift/getGift',
+        })
+      }
+    })
   }
 })

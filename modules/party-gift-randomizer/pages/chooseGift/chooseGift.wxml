@@ -1,2 +1,37 @@
-<!--modules/party-gift-randomizer/pages/chooseGift/chooseGift.wxml-->
-<text>modules/party-gift-randomizer/pages/chooseGift/chooseGift.wxml</text>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="index-desc">you are buying for</view>
+      <image class="index-logo" src=""></image>
+      <view>
+        <text>178cm</text>
+        <text>70kg</text>
+      </view>
+    </view>
+
+
+
+    <view class="page-section">
+      <view class="page-section-title">
+        <text>flex-direction: row\n横向布局</text>
+      </view>
+      <view class="page-section-spacing">
+        <scroll-view scroll-y="true" style="height: 600rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item">1</view>
+            <view class="flex-item">2</view>
+            <view class="flex-item">3</view>
+            <view class="flex-item">4</view>
+            <view class="flex-item">5</view>
+            <view class="flex-item">6</view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" bindtap='onBuyButtonClicked'>BUY</button>
+
+  </view>
+</view>

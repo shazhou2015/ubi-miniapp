@@ -1,13 +1,19 @@
 {
   "pages": [
-    "index",
     "modules/party-gift-randomizer/pages/index/index",
+    "index",
+    "modules/party-gift-randomizer/pages/getGift/getGift",
+    "modules/party-gift-randomizer/pages/chooseGift/chooseGift",
+    
+    "modules/party-gift-randomizer/pages/addGift/addGift",
+    
+    
     "modules/party-gift-randomizer/pages/share/share",
     "modules/party-gift-randomizer/pages/participants/participants",
     "modules/party-gift-randomizer/pages/gifts/gifts",
-    "modules/party-gift-randomizer/pages/addGift/addGift",
-    "modules/party-gift-randomizer/pages/chooseGift/chooseGift",    
-    "modules/party-gift-randomizer/pages/getGift/getGift",
+    
+    
+    
     
     
     "modules/wolf-law-officer/pages/index/index",

@@ -1,1 +1,14 @@
-/* modules/party-gift-randomizer/pages/chooseGift/chooseGift.wxss */
+@import "/base/index.wxss";
+
+.flex-wrp{
+  margin-top: 60rpx;
+  display:block;
+}
+.flex-item{
+  width: 30%;
+  height: 300rpx;
+  font-size: 26rpx;
+  float: left;
+  background: red;
+  margin: 10rpx;
+}

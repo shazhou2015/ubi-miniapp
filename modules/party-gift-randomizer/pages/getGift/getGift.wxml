@@ -1,2 +1,21 @@
-<!--modules/party-gift-randomizer/pages/getGift/getGift.wxml-->
-<text>modules/party-gift-randomizer/pages/getGift/getGift.wxml</text>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="index-desc">复制次链接打开京东</view>
+    </view>
+
+    <view class="page-section">
+      <image class="index-logo" src=""></image>
+      <view>
+        <text>178cm</text>
+        <text>70kg</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" bindtap='onBuyButtonClicked'>建立新的万圣节</button>
+
+  </view>
+</view>
