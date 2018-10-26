@@ -1,0 +1,6 @@
+@import "/base/index.wxss";
+
+.index-logo {
+  height: 500rpx;
+  width: 500rpx;
+}

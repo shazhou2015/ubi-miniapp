@@ -1,0 +1,139 @@
+<import src="/base/head.wxml" />
+<import src="/base/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: '创建房间'}}"/>
+
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">神民配置</view>
+        <checkbox-group name="godIdentities">
+          <label><checkbox value="prophet"/>预言家</label>
+          <label><checkbox value="witch"/>女巫</label>
+          <label><checkbox value="hunter"/>猎人</label>
+          <label><checkbox value="dumbass"/>白痴</label>
+          <label><checkbox value="checkbox" disabled/>潜行者</label>
+          <label><checkbox value="checkbox" disabled/>长老</label>
+          <label><checkbox value="checkbox" disabled/>骑士</label>
+          <label><checkbox value="checkbox" disabled/>守卫</label>
+          <label><checkbox value="checkbox" disabled/>摄梦人</label>
+          <label><checkbox value="checkbox" disabled/>狐狸</label>
+          <label><checkbox value="checkbox" disabled/>乌鸦</label>
+          <label><checkbox value="checkbox" disabled/>熊</label>
+          <label><checkbox value="checkbox" disabled/>禁言长老</label>
+          <label><checkbox value="checkbox" disabled/>九尾妖狐</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">狼人配置</view>
+        <checkbox-group name="wolfIdentities">
+          <label><checkbox value="checkbox" disabled/>白狼王</label>
+          <label><checkbox value="checkbox" disabled/>隐狼</label>
+          <label><checkbox value="checkbox" disabled/>狼王</label>
+          <label><checkbox value="checkbox" disabled/>恶魔</label>
+          <label><checkbox value="checkbox" disabled/>狼美人</label>
+          <label><checkbox value="checkbox" disabled/>恶灵骑士</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">普通狼人</view>
+        <slider name="numWolves" value="1" min="0" max="8" show-value ></slider>        
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">村民配置</view>
+        <checkbox-group name="villiger-identities">
+          <label><checkbox value="checkbox" disabled/>老流氓</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">普通村民</view>
+        <slider name="numVilligers" value="1" min="0" max="8" show-value ></slider>        
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">特殊身份</view>
+        <checkbox-group name="otherIdentities">
+          <label><checkbox value="checkbox" disabled/>丘比特</label>
+          <label><checkbox value="checkbox" disabled/>盗贼</label>
+          <label><checkbox value="checkbox" disabled/>野孩子</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">技能配置</view>
+
+        <view class="weui-cells weui-cells_after-title">
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">解药</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{cureMode}}" range="{{cure}}">
+                <view class="weui-input">{{cure[cureMode]}}</view>
+              </picker>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">毒药</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{poisonMode}}" range="{{poison}}">
+                <view class="weui-input">{{poison[poisonMode]}}</view>
+              </picker>
+            </view>
+          </view>
+<!-- 
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">守卫</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{guardMode}}" range="{{guard}}">
+                <view class="weui-input">{{guard[guardMode]}}</view>
+              </picker>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">盗贼</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{thiefMode}}" range="{{thief}}">
+                <view class="weui-input">{{thief[thiefMode]}}</view>
+              </picker>
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">丘比特</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{angelMode}}" range="{{angel}}">
+                <view class="weui-input">{{angel[angelMode]}}</view>
+              </picker>
+            </view>
+          </view>  
+-->
+
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">完成配置</button>
+      </view>
+    </form>
+  </view>
+
+  <template is="foot" />
+</view>

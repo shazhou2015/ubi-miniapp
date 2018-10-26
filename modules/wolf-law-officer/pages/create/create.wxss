@@ -1,0 +1,11 @@
+@import "/base/lib/weui.wxss";
+
+label {
+  display: inline-block;
+  min-width: 200rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+form{
+  width: 100%;
+}

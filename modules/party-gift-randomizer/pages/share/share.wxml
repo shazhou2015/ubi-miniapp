@@ -1,0 +1,15 @@
+<view class="index">
+  <view class="index-hd">
+    <image class="index-logo" src="{{qrcodeUrl}}"></image>
+    <view class="index-desc">保存并分享二维码，让朋友们参加你的万圣趴</view>
+  </view>
+  
+  <view class="btn-area">
+    <button type="primary" bindtap='onSaveButtonClicked'>存到相册</button>
+  </view>
+
+</view>
+
+
+
+

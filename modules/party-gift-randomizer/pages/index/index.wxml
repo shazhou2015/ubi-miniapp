@@ -1,0 +1,15 @@
+<view class="index">
+  <view class="index-hd">
+    <image class="index-logo" src="/resources/images/kind/logo.png"></image>
+    <view class="index-desc">建立一个万圣节活动，随机安排一个朋友为你购买万圣节道具。</view>
+  </view>
+  
+  <view class="btn-area">
+    <button type="primary" bindtap='onCreateButtonClicked'>安排！</button>
+  </view>
+
+</view>
+
+
+
+
